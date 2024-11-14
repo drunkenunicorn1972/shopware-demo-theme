@@ -1,6 +1,6 @@
 {
   "name": "ShopwareDemoTheme",
-  "author": "Shopware AG",
+  "author": "Drunken Unicorn",
   "views": [
      "@Storefront",
      "@Plugins",
@@ -9,7 +9,8 @@
   "style": [
     "app/storefront/src/scss/overrides.scss",
     "@Storefront",
-    "app/storefront/src/scss/base.scss"
+    "app/storefront/src/scss/base.scss",
+    "@ShopwareDemoTheme"
   ],
   "script": [
     "@Storefront",

@@ -1,18 +1,41 @@
 {
-  "name": "swag/theme-skeleton",
-  "description": "Theme skeleton plugin",
-  "type": "shopware-platform-plugin",
-  "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "ShopwareDemoTheme\\": "src/"
+    "name": "drunkenunicorn1972/shopware-demo-theme",
+    "version": "1.0.0",
+    "description": "Shopware 6 Theme to experiment with theming features, also very useful for test environments",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Drunken Unicorn",
+            "homepage": "https://www.drunken-unicorn.eu"
+        }
+    ],
+    "extra": {
+        "shopware-plugin-class": "ShopwareDemoTheme\\ShopwareDemoTheme",
+        "label": {
+            "de-DE": "Demo Theme",
+            "en-GB": "Demo Theme"
+        },
+        "description": {
+            "de-DE": "Shopware 6 Theme zum Experimentieren mit Theming-Funktionen, auch sehr nützlich für Testumgebungen",
+            "en-GB": "Shopware 6 Theme to experiment with theming features, also very useful for test environments"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://github.com/drunkenunicorn1972/shopware-demo-theme",
+            "en-GB": "https://github.com/drunkenunicorn1972/shopware-demo-theme"
+        },
+        "supportLink": {
+            "de-DE": "https://github.com/drunkenunicorn1972/shopware-demo-theme/issues",
+            "en-GB": "https://github.com/drunkenunicorn1972/shopware-demo-theme/issues"
+        }
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "ShopwareDemoTheme\\": "src/"
+        }
+    },
+    "require": {
+        "shopware/core": "~6.6.0"
     }
-  },
-  "extra": {
-    "shopware-plugin-class": "ShopwareDemoTheme\\ShopwareDemoTheme",
-    "label": {
-      "de-DE": "Theme ShopwareDemoTheme plugin",
-      "en-GB": "Theme ShopwareDemoTheme plugin"
-    }
-  }
 }

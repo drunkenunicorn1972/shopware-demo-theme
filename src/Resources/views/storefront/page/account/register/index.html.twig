@@ -1,0 +1,30 @@
+{% sw_extends '@Storefront/storefront/page/account/register/index.html.twig' %}
+
+{% block page_account_register_inner %}
+    <div class="row">
+        <h1>{{ 'account.pageTitle'|trans|sw_sanitize }}</h1>
+        {# Nav tabs #}
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="account-login-tab" data-bs-toggle="tab" data-bs-target="#account-login-tabpanel" type="button" role="tab" aria-controls="account-login-tabpanel" aria-selected="true">{{ 'account.registerTitleTab1'|trans|sw_sanitize }}</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="account-register-tab" data-bs-toggle="tab" data-bs-target="#account-register-tabpanel" type="button" role="tab" aria-controls="account-register-tabpanel" aria-selected="false">{{ 'account.registerTitleTab2'|trans|sw_sanitize }}</button>
+            </li>
+        </ul>
+
+        {# Tab panes #}
+        <div class="tab-content">
+            <div class="tab-pane active" id="account-login-tabpanel" role="tabpanel" aria-labelledby="account-login-tab" tabindex="0">
+                {% block page_account_register_login_container %}
+                    {{ parent() }}
+                {% endblock %}
+            </div>
+            <div class="tab-pane" id="account-register-tabpanel" role="tabpanel" aria-labelledby="account-register-tab" tabindex="1">
+                {% block page_account_register_container %}
+                    {{ parent() }}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
